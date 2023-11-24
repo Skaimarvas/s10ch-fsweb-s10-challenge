@@ -3,11 +3,11 @@ import { formatDistanceToNow } from "date-fns";
 import { tr } from "date-fns/locale";
 
 export default function Post({ item }) {
-
   function handleSil() {
     // burada ilgili eylemi dispatch edin
     // sonra toast mesajı gösterin
   }
+  console.log("POST ITEM", item);
 
   return (
     <div className="beyazKutu p-8 pb-6 mb-4 text-sm">
@@ -24,7 +24,10 @@ export default function Post({ item }) {
         </p>
       ))}
 
-      <button className="text-xs text-amber-600 mt-4 underline" onClick={handleSil}>
+      <button
+        className="text-xs text-amber-600 mt-4 underline"
+        onClick={handleSil}
+      >
         Bu notu sil
       </button>
     </div>

@@ -42,9 +42,9 @@ LocalStorage'ı minik bir veritabanı olarak kullanmak için uygulama eğer vars
 
 - [x] `PostList.js` dosyasında listelemek üzere store içerisindeki notları `useSelector` kullanarak alın ve `notlar` arrayine eşitleyin.
 
-- [ ] `PostForm.js` dosyasındaki form submit edildiğinde, actions içerisinden `notEkleAPI` actionunu, formun verisi ile dispatch edin. Bu kısmı ekledikten sonra `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
+- [x] `PostForm.js` dosyasındaki form submit edildiğinde, actions içerisinden `notEkleAPI` actionunu, formun verisi ile dispatch edin. Bu kısmı ekledikten sonra `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
 
-- [ ] `Post.js` içerisinde silme eylemini not id si ile dispatch edin ve yine `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
+- [x] `Post.js` içerisinde silme eylemini not id si ile dispatch edin ve yine `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
 
 - [ ] Ekleme ve silme işlemlerinden sonra kullanıcıya geri bildirim vermek için `react-toastify` paketini kullanın.
 
