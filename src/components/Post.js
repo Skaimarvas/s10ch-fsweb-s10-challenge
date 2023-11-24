@@ -26,7 +26,7 @@ export default function Post({ item }) {
       ))}
 
       <button
-        className="text-xs text-amber-600 mt-4 underline"
+        className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-5 rounded"
         onClick={handleSil}
       >
         Bu notu sil
