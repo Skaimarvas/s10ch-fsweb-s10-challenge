@@ -9,7 +9,6 @@ export default function Post({ item }) {
   function handleSil() {
     dispatch(notSilAPI(item.id));
   }
-  console.log("POST ITEM", item);
 
   return (
     <div className="beyazKutu p-8 pb-6 mb-4 text-sm">

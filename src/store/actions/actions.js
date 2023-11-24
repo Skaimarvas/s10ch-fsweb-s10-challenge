@@ -26,7 +26,6 @@ export const notEkleAPI =
       .then((res) => {
         if (res.status === 200) {
           dispatch(notEkle(yeniNot));
-          console.log("RESDATA", res.data);
         }
       })
       .catch((error) => console.log(error));
@@ -38,7 +37,6 @@ export const notSilAPI = (id) => (dispatch) => {
     .then((res) => {
       if (res.status === 200) {
         dispatch(notSil(id));
-        console.log("ID", id, res.data);
       }
     })
     .catch((error) => console.log(error));
