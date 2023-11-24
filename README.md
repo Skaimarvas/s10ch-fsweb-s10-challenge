@@ -46,7 +46,7 @@ LocalStorage'ı minik bir veritabanı olarak kullanmak için uygulama eğer vars
 
 - [x] `Post.js` içerisinde silme eylemini not id si ile dispatch edin ve yine `actions.js` dosyasında gerekli değişiklikleri, yönergeleri takip ederek yapın.
 
-- [ ] Ekleme ve silme işlemlerinden sonra kullanıcıya geri bildirim vermek için `react-toastify` paketini kullanın.
+- [x] Ekleme ve silme işlemlerinden sonra kullanıcıya geri bildirim vermek için `react-toastify` paketini kullanın.
 
 ### Görev 3: Redux store'u localStorage içerisindeki verilerle başlatmak
 

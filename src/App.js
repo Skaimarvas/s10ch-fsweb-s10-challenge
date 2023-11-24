@@ -67,8 +67,8 @@ export default function App() {
             <PostList />
           </div>
         </Route>
-        <ToastContainer />
       </Switch>
+      <ToastContainer />
     </div>
   );
 }

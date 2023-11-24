@@ -1,4 +1,5 @@
 import { NOT_EKLE, NOT_SIL, GET_DATA_FROM_LS } from "../actions/actions";
+import { toast } from "react-toastify";
 
 const s10chLocalStorageKey = "s10ch";
 
@@ -40,6 +41,7 @@ export const reducer = (state = baslangicDegerleri, action) => {
           : state.notlar,
       };
       localStorageStateYaz(s10chLocalStorageKey, addNote);
+      toast.info("Halelujah! Not Eklendi!");
       return addNote;
 
     case NOT_SIL:
@@ -47,14 +49,14 @@ export const reducer = (state = baslangicDegerleri, action) => {
         ...state,
         notlar: state.notlar.filter((not) => not.id !== action.payload),
       };
-
+      toast.warn("Destur! Not Silindi");
       localStorageStateYaz(s10chLocalStorageKey, delNote);
 
       return delNote;
 
     case GET_DATA_FROM_LS:
       const getData = baslangicNotlariniGetir(s10chLocalStorageKey);
-      console.log("Sayfa Yüklendi");
+      toast("Sayfa Yüklendi");
       return getData;
     default:
       return state;
