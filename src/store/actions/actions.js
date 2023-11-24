@@ -11,6 +11,11 @@ export function notEkle(not) {
 export function notSil(notId) {
   return { type: NOT_SIL, payload: notId };
 }
+
+export const getDataLS = () => {
+  return { type: GET_DATA_FROM_LS };
+};
+
 //redux thunk action
 export const notEkleAPI =
   (yeniNot) =>

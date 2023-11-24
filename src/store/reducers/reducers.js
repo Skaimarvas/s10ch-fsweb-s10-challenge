@@ -54,6 +54,7 @@ export const reducer = (state = baslangicDegerleri, action) => {
 
     case GET_DATA_FROM_LS:
       const getData = baslangicNotlariniGetir(s10chLocalStorageKey);
+      toast("App Yüklendi");
       return getData;
     default:
       return state;
