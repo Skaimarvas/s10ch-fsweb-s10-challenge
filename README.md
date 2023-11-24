@@ -20,11 +20,11 @@ Bu günlük içerisinde daha önce eklenmiş notlar listelenmeli, notlar silineb
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [x] Forklayın.
+- [x] Klonlayın
+- [x] Ana dizine gidin
+- [x] `npm install`
+- [x] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
@@ -32,7 +32,7 @@ Yeni not ekleme ve silme işlemi esnasında bir API'ye request atılmalı ve gel
 
 LocalStorage'ı minik bir veritabanı olarak kullanmak için uygulama eğer varsa daha önce localStorage'a kaydedilmiş verilerle başlatılmalı ve `redux store`'unda yapılan her değişiklik localStorage'a da yansıtılmalıdır.
 
-- [ ] Projeyi inceleyin ve componentlar arasındaki ilişkiyi bulun.
+- [x] Projeyi inceleyin ve componentlar arasındaki ilişkiyi bulun.
 
 - [ ] `actions.js` dosyasını inceleyin, kod eklemeniz gereken yerleri bulun.
 
