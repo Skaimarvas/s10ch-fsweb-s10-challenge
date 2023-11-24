@@ -8,7 +8,7 @@ const PostList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getDataLS);
+    dispatch(getDataLS());
   }, []);
 
   return notlar.length === 0 ? (
