@@ -2,12 +2,12 @@ import React from "react";
 import { formatDistanceToNow } from "date-fns";
 import { tr } from "date-fns/locale";
 import { useDispatch } from "react-redux";
-import { notSil } from "../store/actions/actions";
+import { notSil, notSilAPI } from "../store/actions/actions";
 
 export default function Post({ item }) {
   const dispatch = useDispatch();
   function handleSil() {
-    dispatch(notSil(item.id));
+    dispatch(notSilAPI(item.id));
   }
   console.log("POST ITEM", item);
 

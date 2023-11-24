@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import { useHistory } from "react-router";
 import Gratitude from "./../assets/grForm.png";
 import { useDispatch } from "react-redux";
-import { notEkle, notEkleAPI } from "../store/actions/actions";
+import { notEkleAPI } from "../store/actions/actions";
 
 export default function PostForm() {
   const {

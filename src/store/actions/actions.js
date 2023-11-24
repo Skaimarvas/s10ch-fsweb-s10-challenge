@@ -33,12 +33,12 @@ export const notEkleAPI =
   };
 
 export const notSilAPI = (id) => (dispatch) => {
-  console.log(id);
   axios
     .delete("https://httpbin.org/anything", { data: id })
     .then((res) => {
       if (res.status === 200) {
-        // res.data objesi içerisinden ihtiyaç duyduğunuz değeri bulun ve oluşturduğunuz notSil ile dispatch edin
+        dispatch(notSil(id));
+        console.log("ID", id, res.data);
       }
     })
     .catch((error) => console.log(error));
