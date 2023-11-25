@@ -58,6 +58,6 @@ Tarayıcınızda daha önceden `localStorage` içerisinde Minnet Günlüğü uyg
 
 ### Esnek Görevler
 
-- [ ] En son eklenen notun en yukarıda görünmesi için neler yapılabilir? Düşünün ve uygulayın.
-- [ ] Bu uygulamada kullanılabilecek başka tasarımlar arayın ve buna uygun olarak layoutı ve renkleri değiştirin.
-- [ ] Uygulamaya yeni fonksiyonellikler eklemeye çalışın.
+- [x] En son eklenen notun en yukarıda görünmesi için neler yapılabilir? Düşünün ve uygulayın. (Diziye toReversed methodu uygulandı)
+- [x] Bu uygulamada kullanılabilecek başka tasarımlar arayın ve buna uygun olarak layoutı ve renkleri değiştirin.
+- [x] Uygulamaya yeni fonksiyonellikler eklemeye çalışın. //Tüm notları sil özelliği getirildi.

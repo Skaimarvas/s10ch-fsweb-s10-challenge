@@ -3,6 +3,11 @@ import axios from "axios";
 export const NOT_EKLE = "NOT_EKLE";
 export const NOT_SIL = "NOT_SIL";
 export const GET_DATA_FROM_LS = "GET_DATA_FROM_LS";
+export const DEL_ALL_DATA = "DEL_ALL_DATA";
+
+export function delAllData() {
+  return { type: DEL_ALL_DATA };
+}
 
 export function notEkle(not) {
   return { type: NOT_EKLE, payload: not };

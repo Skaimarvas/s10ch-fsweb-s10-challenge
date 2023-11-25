@@ -1,4 +1,9 @@
-import { NOT_EKLE, NOT_SIL, GET_DATA_FROM_LS } from "../actions/actions";
+import {
+  NOT_EKLE,
+  NOT_SIL,
+  GET_DATA_FROM_LS,
+  DEL_ALL_DATA,
+} from "../actions/actions";
 import { toast } from "react-toastify";
 
 const s10chLocalStorageKey = "s10ch";
@@ -58,6 +63,13 @@ export const reducer = (state = baslangicDegerleri, action) => {
       const getData = baslangicNotlariniGetir(s10chLocalStorageKey);
       toast("Sayfa Yüklendi");
       return getData;
+
+    case DEL_ALL_DATA:
+      const emptyData = { ...state, notlar: [] };
+      localStorage.removeItem(s10chLocalStorageKey);
+      toast.error("Tüm Data Silindi");
+      return emptyData;
+
     default:
       return state;
   }

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Post from "./Post";
 import { useSelector, useDispatch } from "react-redux";
-import { getDataLS } from "../store/actions/actions";
+import { delAllData, getDataLS } from "../store/actions/actions";
 
 const PostList = () => {
   const notlar = useSelector((store) => store.notlar);
@@ -18,6 +18,13 @@ const PostList = () => {
       {notlar.toReversed().map((not) => (
         <Post item={not} key={not.id} />
       ))}
+      <button
+        onClick={() => dispatch(delAllData())}
+        className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 mt-5 rounded"
+      >
+        {" "}
+        Tüm Notları Sil{" "}
+      </button>
     </div>
   );
 };
